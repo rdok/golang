@@ -1,0 +1,1 @@
+alias go="docker-compose exec golang go"
