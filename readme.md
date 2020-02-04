@@ -2,26 +2,21 @@
 ### Quickstart
 ```
 docker-compose up -d
-
-# For IDE support
-docker cp __go_container_id__:/usr/local/go ./pkg/
-
-# For GoLand create an external tool and map it to F10/your favourite button
-# /usr/local/bin/docker-compose exec -T golang go run $FilePathRelativeToProjectRoot$ 
-# https://www.jetbrains.com/help/idea/configuring-third-party-tools.html
 ```
 
-### Format
-`source aliases && go fmt src/hello.go`
-TODO: autoformat on git commit
+### Execute a script
+```
+go run src/hello.go
+go build src/hello.go
+go install src/hello.go
+```
 
-### Build
-`source aliases && go build src/hello.go`
+### Modules
+```
+go mod init
+```
 
-
-
-### TODO
-- Use package manager to install:
+### Sources
 ```
 docker-compose exec golang go get -d github.com/GoesToEleven/go-programming
 docker-compose exec golang go get -d github.com/GoesToEleven/golang-web-dev
