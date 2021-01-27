@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: gofmt -d . 1>&2 && exit 0
+      - run: gofmt -d . 1>&2 && exit 1
   linter:
     runs-on: ubuntu-latest
     steps:
