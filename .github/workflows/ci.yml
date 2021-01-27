@@ -2,6 +2,8 @@ name: CI
 on:
   pull_request:
     branches: [ main ]
+  schedule:
+    - cron: '0 12 * * *'
 jobs:
   formatter:
     runs-on: ubuntu-20.04
