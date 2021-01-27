@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-// $ go run %
+// $ go run % lorem-arg
 func main() {
 	output, separator := "", ", "
 
