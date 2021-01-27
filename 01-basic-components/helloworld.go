@@ -2,10 +2,6 @@ package main
 
 import "fmt"
 
-func main() { fmt.Println("Hello world!")
-
-}
-
-func invalid(){
-
+func main() {
+	fmt.Println("Hello world!")
 }
