@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Linter
+        uses: golangci/golangci-lint-action@v2
+        with:
+          version: 1.36
+          skip-go-installation: true
