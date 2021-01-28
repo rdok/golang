@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-// $ go run 01-basic-components/02-print-args.go arg1
+// $ go run 01-tutorial/01-print-args.go arg1
 func main() {
 	command := os.Args[0]
 	fmt.Println("Command: " + command)
