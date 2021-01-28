@@ -9,7 +9,7 @@ import (
 
 // $ go run main.go input.txt input-beta.txt
 func main() {
-	counts := make(map[string]int)
+	duplicateLines := make(map[string]int)
 
 	for _, filename := range os.Args[1:] {
 		data, err := ioutil.ReadFile(filename)
@@ -20,11 +20,11 @@ func main() {
 
 		for _, line := range strings.Split(string(data), "\n") {
 			id := fmt.Sprintf("%s %s", filename, line)
-			counts[id]++
+			duplicateLines[id]++
 		}
 	}
 
-	for line, occurrences := range counts {
+	for line, occurrences := range duplicateLines {
 		if occurrences > 1 {
 			fmt.Printf("%d\t%s\n", occurrences, line)
 		}
