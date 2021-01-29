@@ -11,15 +11,21 @@ import (
 )
 
 var green = color.RGBA{R: 0, G: 177, B: 106, A: 1}
-var black = color.RGBA{R: 30, G: 130, B: 76, A: 1}
+var black = color.RGBA{R: 0, G: 0, B: 0, A: 1}
+
 //var palette = []color.RGBA{green, black}
-var palette = []color.Color{green, black}
+var palette = []color.Color{black, green}
 
 const (
 	blackIndex = 1 // next color in palette
 )
 
+// go run % color-x color-y index
 func main() {
+	colorX = os.Args[2]
+	colorY = os.Args[3]
+	colorIndex = os.Args[4]
+
 	lissajous(os.Stdout)
 }
 
