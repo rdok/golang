@@ -4,3 +4,5 @@
 ## Quickstart
 - Install golang
 - `go run filename`
+
+![gif](https://raw.githubusercontent.com/rdok/golang/main/lissajous.gif "GIF")
