@@ -10,10 +10,12 @@ import (
 	"os"
 )
 
-var palette = []color.Color{color.White, color.Black}
+var green = color.RGBA{R: 0, G: 177, B: 106, A: 1}
+var black = color.RGBA{R: 30, G: 130, B: 76, A: 1}
+//var palette = []color.RGBA{green, black}
+var palette = []color.Color{green, black}
 
 const (
-	//whiteIndex = 0 // first color in palette
 	blackIndex = 1 // next color in palette
 )
 
